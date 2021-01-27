@@ -1,3 +1,4 @@
+import { AuthEffects } from './store/ducks/auth/auth.effects';
 import { extModules } from './store/extensions/index';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,7 +19,7 @@ import { EffectsModule } from '@ngrx/effects';
     PagesModule,
     StoreModule.forRoot(Reducers, {}),
     extModules,
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([AuthEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent],
