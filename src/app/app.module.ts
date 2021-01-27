@@ -1,3 +1,5 @@
+import { AuthService } from './services/auth-service/auth.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthEffects } from './store/ducks/auth/auth.effects';
 import { extModules } from './store/extensions/index';
 import { NgModule } from '@angular/core';
@@ -19,6 +21,7 @@ import { EffectsModule } from '@ngrx/effects';
     PagesModule,
     StoreModule.forRoot(Reducers, {}),
     extModules,
+    HttpClientModule,
     EffectsModule.forRoot([AuthEffects]),
   ],
   providers: [],
