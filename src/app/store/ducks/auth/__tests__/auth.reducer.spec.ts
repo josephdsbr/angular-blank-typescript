@@ -7,7 +7,7 @@ it('should set name and signed as true when SIGN_IN_SUCCESS is dispatched', () =
     name: 'José Vinícius Santos de Melo',
   };
 
-  const action = authActions.AuthSignInSuccess({ payload: request });
+  const action = authActions.AuthSignInSuccess({ user: request });
   const result = AuthReducer(authInitialState, action);
 
   expect(result.name).toBe(request.name);

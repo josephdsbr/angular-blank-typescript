@@ -1,3 +1,4 @@
+import { SignedGuardService } from './guard/signed-guard.service';
 import { DefaultLayoutModule } from './@layouts/default-layout/default-layout.module';
 import { DefaultLayoutComponent } from './@layouts/default-layout/default-layout.component';
 import { NotFoundComponent } from './pages/public/not-found/not-found.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
     component: DefaultLayoutComponent,
     loadChildren: () =>
       import('./pages/pages.module').then((module) => module.PagesModule),
+    canActivate: [SignedGuardService],
   },
   {
     path: '',
