@@ -3,11 +3,19 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-
+import {
+  getAllDataFromLocalForage,
+  default as localForage,
+} from 'ngrx-store-persist';
 if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .catch((error) => console.error(error));
+getAllDataFromLocalForage({
+  driver: localForage.INDEXEDDB,
+  keys: ['auth'],
+}).then(() =>
+  platformBrowserDynamic()
+    .bootstrapModule(AppModule)
+    .catch((error) => console.error(error))
+);
