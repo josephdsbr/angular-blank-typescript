@@ -10,9 +10,9 @@ export const authInitialState: AuthState = {
 
 export const AuthReducer = createReducer(
   authInitialState,
-  on(authActions.AuthSignInSuccess, (state, { payload }) =>
+  on(authActions.AuthSignInSuccess, (state, { user }) =>
     produce(state, (draft) => {
-      draft.name = payload.name;
+      draft.name = user.name;
       draft.signed = true;
     })
   )

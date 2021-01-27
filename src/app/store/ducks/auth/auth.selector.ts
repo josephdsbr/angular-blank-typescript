@@ -8,3 +8,5 @@ export const selectAuthSigned = createSelector(
   selectAuth,
   (state) => state.signed
 );
+
+export const selectAuthName = createSelector(selectAuth, (state) => state.name);

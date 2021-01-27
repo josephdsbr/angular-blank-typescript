@@ -9,15 +9,15 @@ import { createAction, props } from '@ngrx/store';
 
 export const AuthSignInRequest = createAction(
   AuthActionsType.AUTH_SIGN_IN_REQUEST,
-  props<{ payload: AuthSignInRequestModel }>()
+  props<{ credentials: AuthSignInRequestModel }>()
 );
 
 export const AuthSignInSuccess = createAction(
   AuthActionsType.AUTH_SIGN_IN_SUCCESS,
-  props<{ payload: AuthSignInSuccessModel }>()
+  props<{ user: AuthSignInSuccessModel }>()
 );
 
 export const AuthSignInFailure = createAction(
   AuthActionsType.AUTH_SIGN_IN_FAILURE,
-  props<{ payload: Error }>()
+  props<{ error: Error }>()
 );

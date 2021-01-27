@@ -1,7 +1,9 @@
+import { selectAuthName } from './../../store/ducks/auth/auth.selector';
 import { AuthSignInRequest } from './../../store/ducks/auth/auth.actions';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/store';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-user',
@@ -9,11 +11,8 @@ import { AppState } from 'src/app/store';
   styleUrls: ['./user.component.sass'],
 })
 export class UserComponent {
-  constructor(private store: Store<AppState>) {}
-
-  handleLogin() {
-    this.store.dispatch(
-      AuthSignInRequest({ payload: { ni: '70808596462', password: '123' } })
-    );
+  name: Observable<string>;
+  constructor(private store: Store<AppState>) {
+    this.name = this.store.select(selectAuthName);
   }
 }
