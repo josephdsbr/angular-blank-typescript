@@ -1,3 +1,4 @@
+import { CommonsMetaReducer } from './store/meta-reducers/index';
 import { AuthService } from './services/auth-service/auth.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthEffects } from './store/ducks/auth/auth.effects';
@@ -19,7 +20,7 @@ import { EffectsModule } from '@ngrx/effects';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    StoreModule.forRoot(Reducers, {}),
+    StoreModule.forRoot(Reducers, { metaReducers: CommonsMetaReducer }),
     extModules,
     HttpClientModule,
     EffectsModule.forRoot([AuthEffects]),
