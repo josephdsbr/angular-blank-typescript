@@ -8,6 +8,7 @@ import { PagesModule } from './pages/pages.module';
 import { StoreModule } from '@ngrx/store';
 import { Reducers } from './store';
 import { AuthReducer } from './store/ducks/auth/auth.reducer';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { AuthReducer } from './store/ducks/auth/auth.reducer';
     PagesModule,
     StoreModule.forRoot(Reducers, {}),
     extModules,
+    EffectsModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent],
