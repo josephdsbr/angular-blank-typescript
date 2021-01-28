@@ -1,3 +1,4 @@
+import { CoreModule } from './@core/core.module';
 import { CommonsMetaReducer } from './store/meta-reducers/index';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthEffects } from './store/ducks/auth/auth.effects';
@@ -22,6 +23,7 @@ import { EffectsModule } from '@ngrx/effects';
     extModules,
     HttpClientModule,
     EffectsModule.forRoot([AuthEffects]),
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
