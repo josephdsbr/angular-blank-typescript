@@ -27,6 +27,7 @@
     "ngrx-store-persist": "^1.0.20",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "yup": "^0.32.8",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
