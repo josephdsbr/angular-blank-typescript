@@ -6,10 +6,12 @@ import { AuthSignInRequest } from 'src/app/store/ducks/auth/auth.actions';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass'],
+  styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   constructor(private store: Store<AppState>) {}
+
+  ngOnInit(): void {}
 
   handleLogin() {
     const credentials = { ni: '70808596462', password: '123' };

@@ -7,7 +7,7 @@ import { AuthActionsType } from './auth.types';
 import { Injectable } from '@angular/core';
 import { Actions, ofType, Effect } from '@ngrx/effects';
 import { catchError, map, switchMap, tap } from 'rxjs/operators';
-import { AuthService } from 'src/app/services/auth-service/auth.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
 import { of } from 'rxjs';
 import { Router } from '@angular/router';
 @Injectable()

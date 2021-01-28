@@ -24,8 +24,10 @@ export class GlobalInterceptor implements HttpInterceptor {
       },
     });
 
-    return next
-      .handle(req)
-      .pipe(catchError((error: HttpErrorResponse) => throwError(error.error)));
+    return next.handle(req).pipe(
+      catchError((error: HttpErrorResponse) => {
+        return throwError(error);
+      })
+    );
   }
 }

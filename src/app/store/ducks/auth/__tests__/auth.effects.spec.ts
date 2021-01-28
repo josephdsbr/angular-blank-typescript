@@ -4,7 +4,7 @@ import {
   AuthSignInRequestModel,
   AuthActionsType,
 } from './../auth.types';
-import { AuthService } from 'src/app/services/auth-service/auth.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
 import { CommonsMetaReducer } from './../../../meta-reducers/index';
 import { Store, StoreModule } from '@ngrx/store';
 import { RouterTestingModule } from '@angular/router/testing';
