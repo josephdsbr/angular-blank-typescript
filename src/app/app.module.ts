@@ -1,3 +1,4 @@
+import { PipeModule } from './pipe/pipe.module';
 import { CoreModule } from './@core/core.module';
 import { CommonsMetaReducer } from './store/meta-reducers/index';
 import { HttpClientModule } from '@angular/common/http';
@@ -24,6 +25,7 @@ import { EffectsModule } from '@ngrx/effects';
     HttpClientModule,
     EffectsModule.forRoot([AuthEffects]),
     CoreModule,
+    PipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
