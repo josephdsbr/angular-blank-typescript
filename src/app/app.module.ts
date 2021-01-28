@@ -1,6 +1,5 @@
 import { CommonsMetaReducer } from './store/meta-reducers/index';
-import { AuthService } from './services/auth-service/auth.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AuthEffects } from './store/ducks/auth/auth.effects';
 import { extModules } from './store/extensions/index';
 import { NgModule } from '@angular/core';
@@ -11,7 +10,6 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { StoreModule } from '@ngrx/store';
 import { Reducers } from './store';
-import { AuthReducer } from './store/ducks/auth/auth.reducer';
 import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
