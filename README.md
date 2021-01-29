@@ -29,7 +29,7 @@ In our case, you are going to explore the [NgRx library](https://ngrx.io/), whic
 
 In general, NgRx and Redux have much more features than Flux suggested at its beginning. But we are going to focus on the basic structures such as dispatchers, actions, views, reducers, middlewares, and stores.
 
-### Structure
+### Folder Structure
 
 How we see in the image below, the data flow is unidirectional. It means that the data pass from a sector to another just in one way. It is extensively used in Reactive programs. In practice, it means that child components cannot update information in their parents.
 
@@ -55,15 +55,15 @@ In some cases, it is necessary, depending on the action dispatched, to make some
     │   ├── app
     │   │   ├── @assets
     │   │   ├── @configuration
-    │   │   ├── @core (**Main parts of the application as Initializers and Interceptors**)
+    │   │   ├── @core                # Main parts of the application as Initializers and Interceptors
     │   │   ├── @layouts
     │   │   ├── components
-    │   │   ├── exceptions (**Global and Local Exception/Error Handlers**)
+    │   │   ├── exceptions           # Global and Local Exception/Error Handlers
     │   │   ├── guard
     │   │   ├── pages
-    │   │   ├── pipe (Create customized [Pipes](https://angular.io/guide/pipes))
+    │   │   ├── pipe                 # Create customized Pipes
     │   │   ├── services
-    │   │   ├── store (Redux module using [NGRX](https://ngrx.io/))
+    │   │   ├── store                # Redux module using NGRX
     │   │   ├── util
     │   │   ├── validators
     │   ├── environments
