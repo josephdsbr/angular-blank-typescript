@@ -50,22 +50,23 @@ In some cases, it is necessary, depending on the action dispatched, to make some
 
 ## Structure
 
-+-- src
-  +-- app
-    +-- @assets
-    +-- @configuration
-    +-- @core (**Main parts of the application as Initializers and Interceptors**)
-    +-- @layouts
-    +-- components
-    +-- exceptions (**Global and Local Exception/Error Handlers**)
-    +-- guard
-    +-- pages
-    +-- pipe (Create customized [Pipes](https://angular.io/guide/pipes))
-    +-- services
-    +-- store (Redux module using [NGRX](https://ngrx.io/))
-    +-- util
-    +-- validators
-  +-- environments
+    .
+    |-- src
+    |   |-- app
+    |   |   |-- @assets
+    |   |   |-- @configuration
+    |   |   |-- @core (**Main parts of the application as Initializers and Interceptors**)
+    |   |   |-- @layouts
+    |   |   |-- components
+    |   |   |-- exceptions (**Global and Local Exception/Error Handlers**)
+    |   |   |-- guard
+    |   |   |-- pages
+    |   |   |-- pipe (Create customized [Pipes](https://angular.io/guide/pipes))
+    |   |   |-- services
+    |   |   |-- store (Redux module using [NGRX](https://ngrx.io/))
+    |   |   |-- util
+    |   |   |-- validators
+    |   |-- environments
 
 ## Prerequisites
 
