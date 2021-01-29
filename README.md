@@ -4,16 +4,32 @@ This project was developed to be used as a Blank to start.
 
 Content
 ==================
-<p align="center">
-  <a href="#informations">Informations</a>
-  <a href="#architecture">Architecture</a>
-  <a href="folder-structure">Folder Structure</a>
-  <a href="#recommendation">Recommendation</a>
-  <a href="#prerequisites">Prerequisites</a>
-  <a href="#installation">Installation</a>
-  <a href="#how-to-use">How to use</a>
-  <a href="#technologies">Technologies</a>
-</p>
+<ul align="center">
+  <li>
+    <a href="#informations">Informations</a>
+  </li>
+  <li>
+    <a href="#architecture">Architecture</a>
+  </li>
+  <li>
+    <a href="folder-structure">Folder Structure</a>
+  </li>
+  <li>
+    <a href="#recommendation">Recommendation</a>
+  </li>
+  <li>
+    <a href="#prerequisites">Prerequisites</a>
+  </li>
+  <li>
+    <a href="#installation">Installation</a>
+  </li>
+  <li>
+    <a href="#how-to-use">How to use</a>
+  </li>
+  <li>
+    <a href="#technologies">Technologies</a>
+  </li>
+</ul>
 
 ## Informations
 
@@ -75,7 +91,7 @@ You need to have [Node 12+](https://nodejs.org/en/) or [Yarn 1.2+](https://yarnp
 
 ## Recommendation
 
-We strongly recommend you to change the Application's name from **angular-blank-template** to anyone of your choice inside these files: `angular.json`, `package.json`, `e2e\src\app.e2e-spec.ts`, `src/app/app.component.ts`.
+We strongly recommend you to change the Application's name from **`angular-blank-template`** to anyone of your choice inside these files: `angular.json`, `package.json`, `e2e\src\app.e2e-spec.ts`, `src/app/app.component.ts`.
 
 ## Installation
 
