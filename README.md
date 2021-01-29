@@ -10,7 +10,7 @@ Content
   - [Architecture](#architecture)
     - [What is Flux?](#what-is-flux)
     - [Structure](#structure)
-    - [Middlewares](#middlewares)
+    - [Middleware](#middleware)
   - [Folder Structure](#folder-structure)
   - [Prerequisites](#prerequisites)
   - [Recommendation](#recommendation)
@@ -47,7 +47,7 @@ Flux architecture is quite simple to understand. The **Store** is responsible fo
   <a href="https://facebook.github.io/flux/docs/in-depth-overview/">Direitos autorais</a>
 </div>
 
-### Middlewares
+### Middleware
 
 In Redux we have the **Reducer** where is implemented our logic. It is responsible to identify, based on the action dispatched, how to update the state into the store.
 In some cases, it is necessary, depending on the action dispatched, to make some logic before the action reached on the reducer. It is called **Middleware**. In most cases, this calls a **Side Effect** as a request to an API or to dispatch other actions.
