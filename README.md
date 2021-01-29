@@ -55,15 +55,15 @@ In some cases, it is necessary, depending on the action dispatched, to make some
     │   ├── app
     │   │   ├── @assets
     │   │   ├── @configuration
-    │   │   ├── @core (**Main parts of the application as Initializers and Interceptors**)
+    │   │   ├── @core                # Main parts of the application as Initializers and Interceptors
     │   │   ├── @layouts
     │   │   ├── components
-    │   │   ├── exceptions (**Global and Local Exception/Error Handlers**)
+    │   │   ├── exceptions           # Global and Local Exception/Error Handlers
     │   │   ├── guard
     │   │   ├── pages
-    │   │   ├── pipe (Create customized [Pipes](https://angular.io/guide/pipes))
+    │   │   ├── pipe                 # Create customized Pipes
     │   │   ├── services
-    │   │   ├── store (Redux module using [NGRX](https://ngrx.io/))
+    │   │   ├── store                # Redux module using NGRX
     │   │   ├── util
     │   │   ├── validators
     │   ├── environments
