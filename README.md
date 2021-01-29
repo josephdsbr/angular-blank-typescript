@@ -28,7 +28,7 @@ In our case, you are going to explore the [NgRx library](https://ngrx.io/), whic
 
 In general, NgRx and Redux have much more features than Flux suggested at its beginning. But we are going to focus on the basic structures such as dispatchers, actions, views, reducers, middlewares, and stores.
 
-### Structure 
+### Folder Structure 
 
 How we see in the image below, the data flow is unidirectional. It means that the data pass from a sector to another just in one way. It is extensively used in Reactive programs. In practice, it means that child components cannot update information in their parents.
 
