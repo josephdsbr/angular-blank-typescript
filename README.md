@@ -8,6 +8,7 @@ Content
   <a href="#informations">Informations</a>
   <a href="#architecture">Architecture</a>
   <a href="folder-structure">Folder Structure</a>
+  <a href="#recommendation">Recommendation</a>
   <a href="#prerequisites">Prerequisites</a>
   <a href="#installation">Installation</a>
   <a href="#how-to-use">How to use</a>
@@ -28,7 +29,7 @@ In our case, you are going to explore the [NgRx library](https://ngrx.io/), whic
 
 In general, NgRx and Redux have much more features than Flux suggested at its beginning. But we are going to focus on the basic structures such as dispatchers, actions, views, reducers, middlewares, and stores.
 
-### Folder Structure
+### Structure
 
 How we see in the image below, the data flow is unidirectional. It means that the data pass from a sector to another just in one way. It is extensively used in Reactive programs. In practice, it means that child components cannot update information in their parents.
 
@@ -47,7 +48,7 @@ In some cases, it is necessary, depending on the action dispatched, to make some
   <a href="https://blog.novoda.com/introduction-to-redux-in-flutter/">Direitos autorais</a>
 </div>
 
-## Structure
+## Folder Structure
 
     .
     ├── src
@@ -71,6 +72,10 @@ In some cases, it is necessary, depending on the action dispatched, to make some
 ## Prerequisites
 
 You need to have [Node 12+](https://nodejs.org/en/) or [Yarn 1.2+](https://yarnpkg.com/) installed on your PC.
+
+## Recommendation
+
+We strongly recommend you to change the Application's name from **angular-blank-template** to anyone of your choice inside these files: `angular.json`, `package.json`, `e2e\src\app.e2e-spec.ts`, `src/app/app.component.ts`.
 
 ## Installation
 
